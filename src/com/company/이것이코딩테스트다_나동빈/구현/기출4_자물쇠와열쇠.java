@@ -87,7 +87,7 @@ package com.company.이것이코딩테스트다_나동빈.구현;
 
 import java.util.*;
 
-public class q4_자물쇠와열쇠 {
+public class 기출4_자물쇠와열쇠 {
 
     static int[][] key = {{0, 0, 0}, {1, 0, 0}, {0, 1, 1}};
     static int[][] lock = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
