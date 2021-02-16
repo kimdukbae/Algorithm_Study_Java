@@ -155,7 +155,7 @@ class Position {
     }
 }
 
-public class q5_뱀 {
+public class 기출5_뱀 {
 
     public static int n, k, l;
     public static int[][] arr = new int[101][101]; // 맵 정보
