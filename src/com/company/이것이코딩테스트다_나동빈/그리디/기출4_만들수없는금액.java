@@ -3,34 +3,32 @@ package com.company.이것이코딩테스트다_나동빈.그리디;
 import java.util.*;
 import java.io.*;
 
-public class 기출1_모험가길드 {
+// 복습 요망!!
+public class 기출4_만들수없는금액 {
 
     static int N;
-    static int[] explorer;
-    static int answer = 0;
+    static int[] coin;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
+        coin = new int[N];
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        explorer = new int[N];
         for (int i = 0; i < N; i++) {
-            explorer[i] = Integer.parseInt(st.nextToken());
+            coin[i] = Integer.parseInt(st.nextToken());
         }
 
-        Arrays.sort(explorer);
-
-        // 현재 그룹핑되는 그룹 인원 수
-        int count = 0;
+        Arrays.sort(coin);
+        int target = 1;
+        // 아래의 로직이 신기함...
         for (int i = 0; i < N; i++) {
-            count++;
-            if (count >= explorer[i]) {
-                answer++;
-                count = 0;
-            }
+            if (target < coin[i])
+                break;
+
+            target += coin[i];
         }
 
-        System.out.println(answer);
+        System.out.println(target);
     }
 }
