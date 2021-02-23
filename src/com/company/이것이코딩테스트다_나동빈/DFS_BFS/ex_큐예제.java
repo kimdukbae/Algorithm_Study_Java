@@ -2,7 +2,7 @@ package com.company.이것이코딩테스트다_나동빈.DFS_BFS;
 
 import java.util.*;
 
-public class 큐예제 {
+public class ex_큐예제 {
     public static void main(String[] args) {
         Queue<Integer> q = new LinkedList<>();
 

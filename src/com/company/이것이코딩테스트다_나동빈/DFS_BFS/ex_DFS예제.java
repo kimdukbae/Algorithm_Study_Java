@@ -2,7 +2,7 @@ package com.company.이것이코딩테스트다_나동빈.DFS_BFS;
 
 import java.util.*;
 
-public class DFS예제 {
+public class ex_DFS예제 {
 
     public static boolean[] visited = new boolean[9];
     public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();

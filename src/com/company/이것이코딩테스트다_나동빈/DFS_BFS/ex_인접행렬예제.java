@@ -1,6 +1,6 @@
 package com.company.이것이코딩테스트다_나동빈.DFS_BFS;
 
-public class 인접행렬예제 {
+public class ex_인접행렬예제 {
 
     // 인접행렬
     public static final int INF = 999999999;

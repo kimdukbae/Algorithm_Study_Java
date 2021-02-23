@@ -2,7 +2,7 @@ package com.company.이것이코딩테스트다_나동빈.DFS_BFS;
 
 import java.util.*;
 
-public class 스택예제 {
+public class ex_스택예제 {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
 

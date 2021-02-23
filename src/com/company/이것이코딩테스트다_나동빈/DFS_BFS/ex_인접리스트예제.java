@@ -16,7 +16,7 @@ class Node {
     }
 }
 
-public class 인접리스트예제 {
+public class ex_인접리스트예제 {
 
     public static ArrayList<ArrayList<Node>> graph = new ArrayList<ArrayList<Node>>();
 
