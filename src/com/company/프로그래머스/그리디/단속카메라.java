@@ -11,11 +11,19 @@ public class 단속카메라 {
     public static int solution(int[][] routes) {
         int answer = 0;
 
-        for (int i = 0; i < routes.length; i++) {
-            for (int j = 0; j < routes[i].length; j++) {
-                System.out.print(routes[i][j] + " ");
+        Arrays.sort(routes, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[1] - o2[1];
             }
-            System.out.println();
+        });
+
+        int min = Integer.MIN_VALUE;
+        for(int[] route : routes) {
+            if (min < route[0]) {
+                min = route[1];
+                answer++;
+            }
         }
 
         return answer;
